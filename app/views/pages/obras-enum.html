@@ -1,13 +1,13 @@
 <div class="container">
   <logo></logo>
   <div class="obras-container">
-  			<div class="obra-box" ng-repeat="obra in obras track by $index">
-		  		<div class="img-container"><img ng-src="{{staticUrl}}img/obras-y-proyectos/{{obra.slug}}/{{obra.miniatura}}" alt="" title="{{obra.titulo}}" /></div>
-          <div class="obra-desc">
-            <p><span class="obra-tit">{{obra.titulo}}</strong></span><br><span class="obra-subtit">{{obra.ubicacion}}, {{obra.inicio_obra}}</span></p>
-          </div>
-		  	</div>
-  		</div>
+    <div class="obra-box" ng-repeat="obra in obras track by $index">
+      <div class="img-container"><img ng-src="{{staticUrl}}img/obras-y-proyectos/{{obra.slug}}/{{obra.miniatura}}" alt="" title="{{obra.titulo}}" /></div>
+      <div class="obra-desc">
+        <p><span class="obra-tit">{{obra.titulo}}</strong></span><br><span class="obra-subtit">{{obra.ubicacion}}, {{obra.inicio_obra}}</span></p>
+      </div>
+    </div>
+  </div>
 </div>
 
 <bottom-bar></bottom-bar>

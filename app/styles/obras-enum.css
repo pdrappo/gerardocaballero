@@ -1,0 +1,30 @@
+.obras-container{
+	margin-bottom: 60px;
+}
+.obra-box{
+	display: inline-block;
+	margin: 15px;
+	width: 160px;
+	height: 120px;
+}
+.img-container{
+	width: 160px;
+	height: 120px;
+	overflow: hidden;
+}
+.img-container img{
+	width: 100%;
+	height: 100%;
+}
+.obra-desc{
+	display: block;
+	max-width: 155px;
+	margin-top: 10px;
+}
+.obra-tit{
+	font-size: 0.8em;
+	font-weight: 600;
+}
+.obra-subtit{
+	font-size: 0.9em;
+}

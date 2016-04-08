@@ -1,0 +1,56 @@
+body {
+  padding: 0;
+  margin: 0;
+  color: black;
+  font-family: 'Swiss721Cn', sans-serif;
+}
+h1, h2, h3{
+  font-family: 'Swiss721Bold';
+}
+@font-face {
+    font-family: 'Swiss721Bold';
+    src: url(fonts/Swis721_BlkCn_Bt_Black.ttf);
+}
+@font-face {
+    font-family: 'Swiss721Cn';
+    src: url(fonts/Swis721_LT_Cn_BT.ttf);
+}
+/* Pantallas Small para Abajo aparece Nav-bar */
+@media (max-width: 991px) {
+  body{
+    padding-top: 20px;
+  }
+}
+.wrapper{
+  margin-bottom: 100px;
+}
+
+.top-title strong{
+  font-family: 'Swiss721Bold', sans-serif;
+  font-size: 1.1em;
+}
+.top-title{
+  font-size: 1.1em;
+  font-family: 'Swiss721Cn', sans-serif;
+  width: 75%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 15px;
+  text-align: center;
+}
+.top-title.animate-bottom{
+  -moz-transition: margin-top 0.5s ease-in;
+  -o-transition: margin-top 0.5s ease-in;
+  -webkit-transition:  margin-top 0.5s ease-in;
+  transition: margin-top 0.5s ease-in;
+  margin-top: 25%;
+}
+.top-title a, .top-title a:visited{
+  color: #262626;
+  text-decoration: none;
+}
+.top-title a:hover{
+  color: black;
+  text-decoration: none;
+  color: #666;
+}

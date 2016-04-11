@@ -1,28 +1,37 @@
 
 .obras-container{
 	margin-bottom: 60px;
+	display: block;
 }
 .obra-box{
 	display: inline-block;
-	margin: 15px;
-	width: 160px;
-	height: 200px;
+	margin: 15px 5px;
+	width: 180px;
+	height: auto;
+}
+.obra-box a{
+	display: block;
+	color: #000;
+}
+.obra-box a:hover{
+	text-decoration: none;
+	color: #337ab7;
 }
 .img-container{
-	width: 160px;
-	height: 120px;
+	width: 180px;
+	height: auto;
 	display: block;
 	text-align: center;
 	vertical-align: baseline;
 	overflow: hidden;
 }
+
 .img-container img{
 	width: 100%;
 	height: auto;
 }
 .obra-desc{
-	display: block;
-	max-width: 155px;
+	width: 190px;
 	margin-top: 10px;
 }
 .obra-tit{

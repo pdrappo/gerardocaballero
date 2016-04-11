@@ -21,6 +21,9 @@ ul.bottom-bar li a{
   padding: 18px;
   text-decoration: none;
   color: #333;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 5px;
 }
 
 ul.bottom-bar li a:hover{

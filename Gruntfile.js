@@ -12,11 +12,18 @@ module.exports = function (grunt) {
   // Time how long tasks take. Can help when optimizing build times
   require('time-grunt')(grunt);
 
+  // HTTP Server para cargar contenido estatico
+  grunt.loadNpmTasks('grunt-http-server');
+
+  
+  //require('load-grunt-tasks')(grunt);
+
   // Automatically load required Grunt tasks
   require('jit-grunt')(grunt, {
     useminPrepare: 'grunt-usemin',
     ngtemplates: 'grunt-angular-templates',
-    cdnify: 'grunt-google-cdn'
+    cdnify: 'grunt-google-cdn',
+    server: 'load-grunt-tasks'//Lo utilizo para el servidor PHP
   });
 
   // Configurable paths for the application
@@ -406,6 +413,40 @@ module.exports = function (grunt) {
         configFile: 'test/karma.conf.js',
         singleRun: true
       }
+    },
+
+    php: {
+      dist: {
+        options: {
+          hostname: '127.0.0.1',
+          port: 5000,
+          base: 'server/data', // Project root 
+          keepalive: true,
+          open: false
+        }
+      }
+    },
+
+    'http-server': {
+ 
+        'static': {
+ 
+            // the server root directory 
+            root: 'static',
+ 
+            // the server port 
+            // can also be written as a function, e.g. 
+            // port: function() { return 8282; } 
+            port: 8000,
+ 
+            // the host ip address 
+            // If specified to, for example, "127.0.0.1" the server will 
+            // only be available on that ip. 
+            // Specify "0.0.0.0" to be available everywhere 
+            host: "127.0.0.1",
+ 
+        }
+ 
     }
   });
 
@@ -421,7 +462,7 @@ module.exports = function (grunt) {
       'concurrent:server',
       'autoprefixer:server',
       'connect:livereload',
-      'watch'
+      'watch',
     ]);
   });
 

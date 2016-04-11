@@ -5,6 +5,8 @@ angular.module('egcApp')
     	templateUrl: 'views/directives/bottom-bar.html',
         link: function(scope, element, attrs){
 
+            console.log($location.url());
+
             scope.links = [
             {url: "#/obras/proyectos-publicos", texto: "Proyectos Públicos"},
             {url: "#/obras/concursos", texto: "Concursos"},

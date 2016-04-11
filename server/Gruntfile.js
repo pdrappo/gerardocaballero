@@ -16,7 +16,7 @@ grunt.initConfig({
     php: {
         dist: {
             options: {
-                hostname: '10.0.2.247',
+                hostname: '127',
                 port: 8000,
                 base: 'data', // Project root
                 keepalive: true,

@@ -29,9 +29,13 @@ angular
       .when('/contacto', {
         templateUrl: 'views/pages/contacto.html'
       })
-      .when('/obras/:id', {
+      .when('/obras/:categoria', {
         templateUrl: 'views/pages/obras-enum.html',
         controller: 'ObrasEnumCtrl'
+      })
+      .when('/obras/:categoria/:slug', {
+        templateUrl: 'views/pages/obra-layout.html',
+        controller: 'ObraLayoutCtrl'
       })
       .when('/admin', {
         templateUrl: 'views/admin/views/index.html',
@@ -46,7 +50,7 @@ angular
     $rootScope.welcomeMsg = "Gerardo Caballero - Arquitecto";
     $rootScope.welcomeLink = "#/inicio";
     $rootScope.apiUrl = 'http://localhost/gerardocaballero.com/api/';
-    $rootScope.staticUrl = 'http://localhost:8080/'
+    $rootScope.staticUrl = 'http://localhost:8000/'
 }]).constant('config', {  
   //apiUrl: 'http://localhost/gerardocaballero.com/api/',
   //staticUrl: 'http://localhost:8000/'

@@ -4,6 +4,7 @@
       <div class="obra-box" ng-repeat="obra in obras track by $index">
         <a ng-href="#/obras/{{categoria}}/{{obra.slug}}" title="{{obra.titulo}}">
           <div class="img-container">
+             <!-- <img ng-src="https://placeholdit.imgix.net/~text?txtsize=33&txt=180%C3%97135&w=180&h=135" alt="" title="{{obra.titulo}}" alt="" title="{{obra.titulo}}" /> -->
             <img ng-src="{{staticUrl}}images/obras-y-proyectos/{{obra.slug}}/{{obra.miniatura}}" alt="" title="{{obra.titulo}}" alt="" title="{{obra.titulo}}" />
           </div>
           <div class="obra-desc">

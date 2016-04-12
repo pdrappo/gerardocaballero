@@ -19,7 +19,7 @@
 }
 .img-container{
 	width: 180px;
-	height: auto;
+	height: 160px;
 	display: block;
 	text-align: center;
 	vertical-align: baseline;
@@ -32,7 +32,6 @@
 }
 .obra-desc{
 	width: 190px;
-	margin-top: 10px;
 }
 .obra-tit{
 	font-size: 0.8em;
